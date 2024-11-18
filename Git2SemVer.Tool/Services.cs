@@ -18,7 +18,7 @@ internal sealed class Services
         services.AddSingleton<ILogger>(logger);
 
         services.AddNoeticToolsGit2SemVerTool();
-        services.AddNoeticToolsCommon();
+        services.AddNoeticToolsCore();
 
         return services.BuildServiceProvider();
     }
