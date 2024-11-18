@@ -21,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Versioning.Build.props = Directory.Versioning.Build.props
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git2SemVer.IntegrationTests", "Git2SemVer.IntegrationTests\Git2SemVer.IntegrationTests.csproj", "{BBEF4194-432A-4604-8070-34F969D5B075}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonProjects", "CommonProjects", "{A1DBE772-6575-4785-A73A-AD71F402D996}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{C1A73F3B-3C59-46BE-9D3F-562A8C21741A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CCCB979E-7BDF-4923-A701-DCAB1D4A1E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CCCB979E-7BDF-4923-A701-DCAB1D4A1E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBEF4194-432A-4604-8070-34F969D5B075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBEF4194-432A-4604-8070-34F969D5B075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBEF4194-432A-4604-8070-34F969D5B075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBEF4194-432A-4604-8070-34F969D5B075}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
