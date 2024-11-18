@@ -47,6 +47,8 @@ a
 <div style="margin-left:0px; margin-top:-5px; margin-bottom:35px; font-family:Calibri; font-size:1.3em;">
 No limits .NET solution versioning.</div>
 
+Git2SemVer.Tool is a dotnet tool to configure a .NET for Git2SemVer solution semmantic versioning.
+
 Git2SemVer is a Visual Studio and developer friendly <a href="https://semver.org">Semantic Versioning</a> framework for .NET solution and project versioning.
 It works the same with Visual Studio builds and dotnet CLI builds. 
 Every build, both developer boxes and the build system, get traceable build numbering (no commit counting).
