@@ -18,3 +18,4 @@ nupkg
 /TestSolutions/CrossTargetingVersioning/TestApplication/Git2SemVer_GeneratedVersionStamp.stamp
 /TestSolutions/CrossTargetingVersioning/TestApplication/Git2SemVer_RestoredProperties.stamp
 /TestSolutions/SolutionVersioning/Directory.Build.props
+/Git2SemVer.Tool.sln.DotSettings.user
