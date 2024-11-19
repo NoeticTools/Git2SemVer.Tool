@@ -11,8 +11,8 @@
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <Title>Simple automatic Git to Semantic Versioning for .NET projects.</Title>
     <Description>Automated Semantic Versioning for Visual Studio and dotnet cli.</Description>
-    <PackageProjectUrl>https://github.com/NoeticTools/Git2SemVer</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/NoeticTools/Git2SemVer</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/NoeticTools/Git2SemVer.MSBuild</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/NoeticTools/Git2SemVer.MSBuild</RepositoryUrl>
     <PackageIcon>Git2SemVer_icon_32x32.png</PackageIcon>
     <ApplicationIcon>Git2SemVer_icon_64x64.ico</ApplicationIcon>
     <PackageReadmeFile>NuGet_description.md</PackageReadmeFile>

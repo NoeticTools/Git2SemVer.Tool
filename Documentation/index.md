@@ -32,13 +32,13 @@ a
 </style>
 
 <div style="background-color:#944248;padding:0px;margin-bottom:0.5em">
-  <img src="https://noetictools.github.io/Git2SemVer/Images/Git2SemVer_banner_840x70.png"/>
+  <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/Git2SemVer_banner_840x70.png"/>
 </div>
 
 [![Current Version](https://img.shields.io/nuget/v/NoeticTools.Git2SemVer.MSBuild?label=Git2SemVer.Msbuild)](https://www.nuget.org/packages/NoeticTools.Git2SemVer.MSBuild)
 [![Current Version](https://img.shields.io/nuget/v/NoeticTools.Git2SemVer.Tool?label=Git2SemVer.Tool)](https://www.nuget.org/packages/NoeticTools.Git2SemVer.Tool)
-[![Release Build](https://github.com/NoeticTools/Git2SemVer/actions/workflows/dotnet.yml/badge.svg)](https://github.com/NoeticTools/Git2SemVer/actions/workflows/dotnet.yml)
-<a href="https://github.com/NoeticTools/Git2SemVer">
+[![Release Build](https://github.com/NoeticTools/Git2SemVer.MSBuild/actions/workflows/dotnet.yml/badge.svg)](https://github.com/NoeticTools/Git2SemVer.MSBuild/actions/workflows/dotnet.yml)
+<a href="https://github.com/NoeticTools/Git2SemVer.MSBuild">
   ![Static Badge](https://img.shields.io/badge/GitHub%20project-944248?logo=github)
 </a>
 
@@ -68,16 +68,16 @@ No build system version generation steps are needed, keeps developer and build e
 
  <tr>
      <td style="width:33%">
-      <img src="https://noetictools.github.io/Git2SemVer/Images/VisualStudio_128x128.png" height=128 />
+      <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/VisualStudio_128x128.png" height=128 />
     </td>
     <td style="width:33%">
       <a href="https://semver.org/">
-        <img src="https://noetictools.github.io/Git2SemVer/Images/SemVer213x128(dark).png" height=128 />
+        <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/SemVer213x128(dark).png" height=128 />
       </a>
     </td>
     <td  style="width:33%">
       <a href="https://www.conventionalcommits.org/en/v1.0.0/">
-        <img src="https://noetictools.github.io/Git2SemVer/Images/ConventionalCommits_128x128.png" height=128 />
+        <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/ConventionalCommits_128x128.png" height=128 />
       </a>
     </td>
 </tr>
@@ -114,7 +114,7 @@ No build system version generation steps are needed, keeps developer and build e
         Benefit from comprehensive industry standard Semmantic Version compliance.
       </p>
       <p>
-        Only tool compliant with <a href="https://noetictools.github.io/Git2SemVer/Reference/Glossary.html##initial-development">initial development versioning.</a> 
+        Only tool compliant with <a href="https://noetictools.github.io/Git2SemVer.MSBuild/Reference/Glossary.html##initial-development">initial development versioning.</a> 
     </div>
   </td>
 
@@ -131,33 +131,33 @@ No build system version generation steps are needed, keeps developer and build e
 
 <tr>
     <td >
-      <a href="https://noetictools.github.io/Git2SemVer/Reference/Glossary.html##environment-parity">
-        <img src="https://noetictools.github.io/Git2SemVer/Images/consistency_128x128.png" height=128 />
+      <a href="https://noetictools.github.io/Git2SemVer.MSBuild/Reference/Glossary.html##environment-parity">
+        <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/consistency_128x128.png" height=128 />
       </a>
     </td>
     <td >
       <p style="font-size:100px; margin:0px;color:DarkCyan;">#</p>
     </td>
     <td >
-      <img src="https://noetictools.github.io/Git2SemVer/Images/CSharp_128x128.png" height=128 />
+      <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/CSharp_128x128.png" height=128 />
     </td>
 </tr>
 <tr>
   <td>
     <div class="featureTitle">
-        <a href="https://noetictools.github.io/Git2SemVer/Reference/Glossary.html##environment-parity">Environment Parity</a>
+        <a href="https://noetictools.github.io/Git2SemVer.MSBuild/Reference/Glossary.html##environment-parity">Environment Parity</a>
     </div>
   </td>
   <td>
     <div class="featureTitle">
-      <a href="https://noetictools.github.io/Git2SemVer/Reference/Glossary.html##build-number">
+      <a href="https://noetictools.github.io/Git2SemVer.MSBuild/Reference/Glossary.html##build-number">
         Build Numbering
       </a>
     </div>
   </td>
   <td>
     <div class="featureTitle">
-        <a href="https://noetictools.github.io/Git2SemVer/Usage/CSharpScripting/CSharpScript.html">C# Scripting</a>
+        <a href="https://noetictools.github.io/Git2SemVer.MSBuild/Usage/CSharpScripting/CSharpScript.html">C# Scripting</a>
     </div>
   </td>
 </tr>
@@ -177,7 +177,7 @@ No build system version generation steps are needed, keeps developer and build e
       <p>
       <p>
         Full traceability.
-        <a href="https://noetictools.github.io/Git2SemVer/Reference/Glossary.html##build-height">Build height</a> <b>NOT</b> used.
+        <a href="https://noetictools.github.io/Git2SemVer.MSBuild/Reference/Glossary.html##build-height">Build height</a> <b>NOT</b> used.
       </p>
     </div>
   </td>
@@ -194,13 +194,13 @@ No build system version generation steps are needed, keeps developer and build e
 
 <tr>
     <td style="width:33%">
-      <img src="https://noetictools.github.io/Git2SemVer/Images/OpenSource_128x128.png" height=128 />
+      <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/OpenSource_128x128.png" height=128 />
     </td>
     <td >
-      <img src="https://noetictools.github.io/Git2SemVer/Images/ComputerMonitor.png" height=128 />
+      <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/ComputerMonitor.png" height=128 />
     </td>
     <td >
-      <img src="https://noetictools.github.io/Git2SemVer/Images/git_workflow_128x128.png" height=128 />
+      <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/git_workflow_128x128.png" height=128 />
     </td>
 </tr>
 <tr>
@@ -245,13 +245,13 @@ No build system version generation steps are needed, keeps developer and build e
 
 <tr>
     <td >
-      <a href="https://noetictools.github.io/Git2SemVer/Usage/BuildHosts/TeamCity.html">
-        <img src="https://noetictools.github.io/Git2SemVer/Images/TeamCity_128x128.png" height=128 />
+      <a href="https://noetictools.github.io/Git2SemVer.MSBuild/Usage/BuildHosts/TeamCity.html">
+        <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/TeamCity_128x128.png" height=128 />
       </a>
     </td>
     <td >
-      <a href="https://noetictools.github.io/Git2SemVer/Usage/BuildHosts/GitHubWorkflows.html">
-        <img src="https://noetictools.github.io/Git2SemVer/Images/github_gray_128x128.png" height=128 />
+      <a href="https://noetictools.github.io/Git2SemVer.MSBuild/Usage/BuildHosts/GitHubWorkflows.html">
+        <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/github_gray_128x128.png" height=128 />
       </a>
     </td>
     <td >
@@ -261,14 +261,14 @@ No build system version generation steps are needed, keeps developer and build e
 <tr>
   <td>
     <div class="featureTitle">
-      <a href="https://noetictools.github.io/Git2SemVer/Usage/BuildHosts/TeamCity.html">
+      <a href="https://noetictools.github.io/Git2SemVer.MSBuild/Usage/BuildHosts/TeamCity.html">
         TeamCity Integration
       </a>
     </div>
   </td>
   <td>
     <div class="featureTitle">
-      <a href="https://noetictools.github.io/Git2SemVer/Usage/BuildHosts/GitHubWorkflows.html">
+      <a href="https://noetictools.github.io/Git2SemVer.MSBuild/Usage/BuildHosts/GitHubWorkflows.html">
         GitHub Workflows
       </a>
     </div>
@@ -286,7 +286,7 @@ No build system version generation steps are needed, keeps developer and build e
         Automatic build system detection with server build number (label) updated with
         a build version specifically adapted for TeamCity.
       </p>
-      <img src="https://noetictools.github.io/Git2SemVer/Images/TeamCity-01.png">
+      <img src="https://noetictools.github.io/Git2SemVer.MSBuild/Images/TeamCity-01.png">
     </div>
   </td>
   <td class="featureBody" style="vertical-align:top">
