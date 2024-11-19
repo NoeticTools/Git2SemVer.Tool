@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Versioning.Build.props = Directory.Versioning.Build.props
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git2SemVer.Tool.Integration.Tests", "Git2SemVer.Tool.Integration.Tests\Git2SemVer.Tool.Integration.Tests.csproj", "{7DC8B429-DB4F-4F7C-B948-02ECC4D2F668}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E5819E29-DBC5-4A81-868D-5ED5283F66B6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CCCB979E-7BDF-4923-A701-DCAB1D4A1E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CCCB979E-7BDF-4923-A701-DCAB1D4A1E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC8B429-DB4F-4F7C-B948-02ECC4D2F668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC8B429-DB4F-4F7C-B948-02ECC4D2F668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC8B429-DB4F-4F7C-B948-02ECC4D2F668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC8B429-DB4F-4F7C-B948-02ECC4D2F668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
