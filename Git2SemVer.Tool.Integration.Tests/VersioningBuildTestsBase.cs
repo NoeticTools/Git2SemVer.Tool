@@ -1,10 +1,9 @@
-﻿using NoeticTools.Git2SemVer.IntegrationTests.Framework;
-using NoeticTools.Git2SemVer.MSBuild.IntegrationTests.Framework;
+﻿using NoeticTools.Git2SemVer.Tool.Integration.Tests.Framework;
 
 
 #pragma warning disable NUnit2045
 
-namespace NoeticTools.Git2SemVer.IntegrationTests;
+namespace NoeticTools.Git2SemVer.Tool.Integration.Tests;
 
 internal abstract class VersioningBuildTestsBase : SolutionTestsBase
 {

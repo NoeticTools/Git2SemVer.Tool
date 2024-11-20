@@ -1,12 +1,10 @@
-using System.Runtime.InteropServices;
 using NoeticTools.Common;
 using NoeticTools.Common.Tools;
-using NoeticTools.Git2SemVer.MSBuild.IntegrationTests.Framework;
 
 
 #pragma warning disable NUnit2045
 
-namespace NoeticTools.Git2SemVer.IntegrationTests.Framework;
+namespace NoeticTools.Git2SemVer.Tool.Integration.Tests.Framework;
 
 internal abstract class SolutionTestsBase : ScriptingTestsBase
 {

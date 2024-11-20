@@ -1,13 +1,12 @@
 using System.Diagnostics;
-using System.Runtime.InteropServices;
 using NoeticTools.Common.Logging;
 using NoeticTools.Common.Tools;
 using NoeticTools.Common.Tools.DotnetCli;
 using NoeticTools.Common.Tools.Git;
-using NoeticTools.Testing.Common;
+using NoeticTools.Git2SemVer.Testing.Core;
 
 
-namespace NoeticTools.Git2SemVer.IntegrationTests.Framework;
+namespace NoeticTools.Git2SemVer.Tool.Integration.Tests.Framework;
 
 [NonParallelizable]
 internal abstract class ScriptingTestsBase
