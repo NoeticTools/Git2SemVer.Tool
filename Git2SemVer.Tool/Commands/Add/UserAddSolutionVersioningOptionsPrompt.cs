@@ -45,7 +45,7 @@ internal sealed class UserAddSolutionVersioningOptionsPrompt : IUserOptionsPromp
         return options;
     }
 
-    private ValidationResult ValidateFolderDoesNotExist(string folder, DirectoryInfo baseDirectory)
+    private static ValidationResult ValidateFolderDoesNotExist(string folder, DirectoryInfo baseDirectory)
     {
         if (string.IsNullOrWhiteSpace(folder))
         {

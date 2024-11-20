@@ -9,6 +9,6 @@ internal class Program
 {
     public static int Main(string[] args)
     {
-        return new Git2SemVerCommandApp().Execute(args);
+        return Git2SemVerCommandApp.Execute(args);
     }
 }

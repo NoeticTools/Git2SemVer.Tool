@@ -156,7 +156,7 @@ internal sealed class RemoveCommand : IRemoveCommand
         }
 
         var progResult = _dotNetCli.Solution.GetProjects(solution.Name);
-        if (!progResult.projects.Any(x => x.Equals($"{leaderProjectName}\\{leaderProjectName}.csproj")))
+        if (!progResult.projects.Any(x => x.Equals($"{leaderProjectName}\\{leaderProjectName}.csproj", StringComparison.Ordinal)))
         {
             _console.WriteWarningLine($"\t- No change. Project '{leaderProjectName}' not found in solution.");
 

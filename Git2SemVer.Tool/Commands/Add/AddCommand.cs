@@ -142,16 +142,19 @@ internal sealed class AddCommand : ISetupCommand
         if (buildPropsFile.Exists)
         {
             var existingContent = File.ReadAllText(buildPropsFile.FullName);
-            if (existingContent.Contains($"<Import Project=\"{SolutionVersioningConstants.DirectoryVersionPropsFilename}\"/>"))
+            if (existingContent.Contains($"<Import Project=\"{SolutionVersioningConstants.DirectoryVersionPropsFilename}\"/>",
+                                         StringComparison.Ordinal))
             {
                 _console.WriteWarningLine($"Existing '{buildPropsFile.FullName}' already has {SolutionVersioningConstants.DirectoryVersionPropsFilename} import.");
             }
             else
             {
-                File.WriteAllText(buildPropsFile.FullName, existingContent.Replace("</Project>", $"""
-                                                                                                      <Import Project="{SolutionVersioningConstants.DirectoryVersionPropsFilename}"/>
-                                                                                                  </Project>
-                                                                                                  """));
+                File.WriteAllText(buildPropsFile.FullName, existingContent.Replace("</Project>",
+                                                                                   $"""
+                                                                                        <Import Project="{SolutionVersioningConstants.DirectoryVersionPropsFilename}"/>
+                                                                                    </Project>
+                                                                                    """,
+                                                                                   StringComparison.Ordinal));
                 _console.WriteInfoLine($"\t- Updated '{buildPropsFile.Name}'.");
             }
         }
@@ -173,7 +176,7 @@ internal sealed class AddCommand : ISetupCommand
         {
             var fullName = gitIgnoreFile.FullName;
             var content = File.ReadAllText(fullName);
-            if (content.Contains(Git2SemVerConstants.ShareFolderName))
+            if (content.Contains(Git2SemVerConstants.ShareFolderName, StringComparison.Ordinal))
             {
                 _console.WriteWarningLine($"The .gitignore file already had an entry for {Git2SemVerConstants.ShareFolderName}.");
                 return;

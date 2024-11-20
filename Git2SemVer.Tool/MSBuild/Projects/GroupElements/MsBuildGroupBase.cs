@@ -51,12 +51,14 @@ public abstract class MsBuildGroupBase<T>
         return element == null ? Add(name, "") : Add(name, element);
     }
 
+#pragma warning disable CA1859
     private IReadOnlyList<XElement> GetItemGroups()
+#pragma warning restore CA1859
     {
         var groups = _xmlDocument.XPathSelectElements($"//{_groupElementName}")
                                  .Where(x => !x.Attributes("Condition").Any())
                                  .ToList();
-        if (!groups.Any())
+        if (groups.Count == 0)
         {
             throw new Git2SemVerInvalidOperationException($"No {_groupElementName} group element found.");
         }

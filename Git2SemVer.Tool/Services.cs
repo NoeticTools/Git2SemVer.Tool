@@ -10,27 +10,15 @@ namespace NoeticTools.Git2SemVer.Tool;
 [RegisterSingleton]
 internal sealed class Services
 {
-    public IServiceProvider ConfigureServices()
+    public static IServiceProvider ConfigureServices(ILogger logger)
     {
         var services = new ServiceCollection();
 
-        var logger = new FileLogger(GetLogFilePath());
         services.AddSingleton<ILogger>(logger);
 
         services.AddNoeticToolsGit2SemVerTool();
         services.AddNoeticToolsGit2SemVerCore();
 
         return services.BuildServiceProvider();
-    }
-
-    private static string GetLogFilePath()
-    {
-        var folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Git2SemVer");
-        if (!Directory.Exists(folderPath))
-        {
-            Directory.CreateDirectory(folderPath);
-        }
-
-        return Path.Combine(folderPath, "Git2SemVer.Tool.log");
     }
 }

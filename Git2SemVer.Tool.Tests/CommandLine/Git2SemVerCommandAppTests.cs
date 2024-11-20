@@ -9,12 +9,6 @@ internal class Git2SemVerCommandAppTests
     [Test]
     public void Test()
     {
-        var target = new Git2SemVerCommandApp();
-
-        //target.Execute(["-h"]);
-
-        //target.Execute(["add", "-s", "xxxx", "-x"]);
-
-        target.Execute(["--version"]);
+        Git2SemVerCommandApp.Execute(["--version"]);
     }
 }

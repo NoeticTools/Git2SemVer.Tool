@@ -28,7 +28,7 @@ public interface IConsoleIO
 
     void WriteErrorLine(string message);
 
-    void WriteInfoLine(string running);
+    void WriteInfoLine(string message);
 
     void WriteLine();
 

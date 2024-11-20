@@ -58,6 +58,8 @@ public class ConsoleIO : IConsoleIO
 
     public T Prompt<T>(TextPrompt<T> prompt, T defaultValue)
     {
+        ArgumentNullException.ThrowIfNull(prompt);
+
         if (Unattended)
         {
             if (prompt.Validator != null)
@@ -140,17 +142,17 @@ public class ConsoleIO : IConsoleIO
 
     private static string NamedColoursEvaluator(Match match)
     {
-        if ("[error]".Equals(match.Value, StringComparison.InvariantCultureIgnoreCase))
+        if ("[error]".Equals(match.Value, StringComparison.Ordinal))
         {
             return "[red]";
         }
 
-        if ("[warn]".Equals(match.Value, StringComparison.InvariantCultureIgnoreCase))
+        if ("[warn]".Equals(match.Value, StringComparison.Ordinal))
         {
             return "[fuchsia]";
         }
 
-        if ("[em]".Equals(match.Value, StringComparison.InvariantCultureIgnoreCase))
+        if ("[em]".Equals(match.Value, StringComparison.Ordinal))
         {
             return "[aqua]";
         }

@@ -6,9 +6,10 @@ namespace NoeticTools.Git2SemVer.Tool.CommandLine;
 
 internal class Git2SemVerCommandApp
 {
-    public int Execute(string[] args)
+    public static int Execute(string[] args)
     {
-        var servicesProvider = new Services().ConfigureServices();
+        using var logger = new FileLogger(GetLogFilePath());
+        var servicesProvider = Services.ConfigureServices(logger);
         var app = new CommandApp();
 
         app.Configure(config =>
@@ -24,11 +25,17 @@ internal class Git2SemVerCommandApp
                   .WithData(servicesProvider);
         });
 
-        var returnCode = app.Run(args);
+        return app.Run(args);
+    }
 
-        var logger = (ILogger)servicesProvider.GetService(typeof(ILogger))!;
-        logger.Dispose();
+    private static string GetLogFilePath()
+    {
+        var folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Git2SemVer");
+        if (!Directory.Exists(folderPath))
+        {
+            Directory.CreateDirectory(folderPath);
+        }
 
-        return returnCode;
+        return Path.Combine(folderPath, "Git2SemVer.Tool.log");
     }
 }

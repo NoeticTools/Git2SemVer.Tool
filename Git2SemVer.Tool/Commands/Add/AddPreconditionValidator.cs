@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 using Injectio.Attributes;
 using NoeticTools.Common;
 using NoeticTools.Common.Logging;
@@ -45,8 +46,8 @@ internal sealed class AddPreconditionValidator : IAddPreconditionValidator
         }
 
         var existingContent = File.ReadAllText(buildPropsFile.FullName);
-        if (!existingContent.Contains("\"Directory.Versioning.Build.Props\"") ||
-            existingContent.Contains("<Import Project=\"Directory.Versioning.Build.Props\"/>"))
+        if (!existingContent.Contains("\"Directory.Versioning.Build.Props\"", StringComparison.Ordinal) ||
+            existingContent.Contains("<Import Project=\"Directory.Versioning.Build.Props\"/>", StringComparison.Ordinal))
         {
             return true;
         }
@@ -93,7 +94,7 @@ internal sealed class AddPreconditionValidator : IAddPreconditionValidator
         message.AppendLine("It looks like the solution is, or was, setup for Git2SemVer solution versioning as:\n");
         foreach (var evidence in priorSetupEvidence)
         {
-            message.AppendLine($"  - {evidence}");
+            message.AppendLine(CultureInfo.InvariantCulture, $"  - {evidence}");
         }
 
         message.AppendLine();
