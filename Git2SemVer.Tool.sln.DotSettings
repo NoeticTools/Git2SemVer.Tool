@@ -265,17 +265,50 @@
 &lt;/Patterns&gt;</s:String>
 	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=IO/@EntryIndexedValue">IO</s:String>
 	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=MS/@EntryIndexedValue">MS</s:String>
-	<s:Boolean x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=25AF697D5C1C66438DA58A90DA0FF5C7/@KeyIndexDefined">True</s:Boolean>
-	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=25AF697D5C1C66438DA58A90DA0FF5C7/AbsolutePath/@EntryValue">C:\Sources\NoeticTools\Git2SemVer.Tool\Git2SemVer.Tool.sln.DotSettings</s:String>
-	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=25AF697D5C1C66438DA58A90DA0FF5C7/RelativePath/@EntryValue"></s:String>
+	<s:Boolean x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=169A7C881FDEEE438C93768C98EF752E/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=169A7C881FDEEE438C93768C98EF752E/AbsolutePath/@EntryValue">C:\Sources\NoeticTools\Git2SemVer.Tool\Git2SemVer.Tool.sln.DotSettings</s:String>
+	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=169A7C881FDEEE438C93768C98EF752E/RelativePath/@EntryValue"></s:String>
+	
+	
+	
 	<s:Boolean x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=7B4C40C7BF0C6F4F92CEE6288821AF77/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=7B4C40C7BF0C6F4F92CEE6288821AF77/AbsolutePath/@EntryValue">C:\Sources\NoeticTools\Git2SemVer\Git2SemVer.sln.DotSettings</s:String>
 	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=7B4C40C7BF0C6F4F92CEE6288821AF77/RelativePath/@EntryValue"></s:String>
-	<s:Boolean x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File25AF697D5C1C66438DA58A90DA0FF5C7/@KeyIndexDefined">True</s:Boolean>
-	<s:Double x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File25AF697D5C1C66438DA58A90DA0FF5C7/RelativePriority/@EntryValue">5.5</s:Double>
+	<s:Boolean x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File169A7C881FDEEE438C93768C98EF752E/@KeyIndexDefined">True</s:Boolean>
+	<s:Double x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File169A7C881FDEEE438C93768C98EF752E/RelativePriority/@EntryValue">5.5</s:Double>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<s:Boolean x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File7B4C40C7BF0C6F4F92CEE6288821AF77/@KeyIndexDefined">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File7B4C40C7BF0C6F4F92CEE6288821AF77/IsOn/@EntryValue">False</s:Boolean>
 	<s:Double x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File7B4C40C7BF0C6F4F92CEE6288821AF77/RelativePriority/@EntryValue">4.5</s:Double>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpKeepExistingMigration/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpPlaceEmbeddedOnSameLineMigration/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpUseContinuousIndentInsideBracesMigration/@EntryIndexedValue">True</s:Boolean>
