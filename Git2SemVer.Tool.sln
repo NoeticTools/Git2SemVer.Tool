@@ -21,6 +21,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git2SemVer.Tool.Integration.Tests", "Git2SemVer.Tool.Integration.Tests\Git2SemVer.Tool.Integration.Tests.csproj", "{7DC8B429-DB4F-4F7C-B948-02ECC4D2F668}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{D3B2EBA9-99C4-439C-8F7F-5BF7D27653FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{A586E2B2-B8ED-45B8-9ADF-6730009A4834}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +55,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A586E2B2-B8ED-45B8-9ADF-6730009A4834} = {D3B2EBA9-99C4-439C-8F7F-5BF7D27653FB}
 	EndGlobalSection
 EndGlobal
