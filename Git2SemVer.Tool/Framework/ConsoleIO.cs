@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using Injectio.Attributes;
-using NoeticTools.Common.Exceptions;
-using NoeticTools.Common.Logging;
+using NoeticTools.Git2SemVer.Core.Exceptions;
+using NoeticTools.Git2SemVer.Core.Logging;
 using Spectre.Console;
 
 

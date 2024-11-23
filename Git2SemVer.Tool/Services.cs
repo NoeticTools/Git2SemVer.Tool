@@ -1,6 +1,6 @@
 ﻿using Injectio.Attributes;
 using Microsoft.Extensions.DependencyInjection;
-using NoeticTools.Common.Logging;
+using NoeticTools.Git2SemVer.Core.Logging;
 
 
 // ReSharper disable ClassNeverInstantiated.Global

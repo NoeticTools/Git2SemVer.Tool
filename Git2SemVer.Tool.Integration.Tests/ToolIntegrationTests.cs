@@ -16,9 +16,6 @@ internal class ToolIntegrationTests : SolutionTestsBase
     {
         OneTimeSetUpBase();
 
-        //BuildGit2SemVerMSBuild();
-        //BuildGit2SemVerTool();
-
         var testProjectBinDirectory = Path.Combine(TestSolutionDirectory, "TestApplication/bin/", BuildConfiguration);
         _packageOutputDir = testProjectBinDirectory;
     }

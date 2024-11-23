@@ -1,6 +1,8 @@
 ﻿using System.Xml.Linq;
 using System.Xml.XPath;
-using NoeticTools.Common.Exceptions;
+using NoeticTools.Git2SemVer.Core.Exceptions;
+
+
 #pragma warning disable CA1826
 
 

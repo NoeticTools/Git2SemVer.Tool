@@ -1,8 +1,8 @@
 ﻿using Injectio.Attributes;
-using NoeticTools.Common;
-using NoeticTools.Common.Logging;
-using NoeticTools.Common.Tools.DotnetCli;
-using NoeticTools.Git2SemVer.Common;
+using NoeticTools.Git2SemVer.Core.Logging;
+using NoeticTools.Git2SemVer.Core.Tools.DotnetCli;
+using NoeticTools.Git2SemVer.Core;
+using NoeticTools.Git2SemVer.Core.Git2SemVer;
 using NoeticTools.Git2SemVer.Tool.Framework;
 using NoeticTools.Git2SemVer.Tool.MSBuild;
 using NoeticTools.Git2SemVer.Tool.MSBuild.Projects;

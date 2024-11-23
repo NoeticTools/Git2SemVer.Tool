@@ -1,6 +1,6 @@
 //using Moq;
 //using NoeticTools.Common;
-//using NoeticTools.Common.Tools.DotnetCli;
+//using NoeticTools.Git2SemVer.Core.Tools.DotnetCli;
 //using NoeticTools.Git2SemVer.Tool.BuildPropsFile;
 //using NoeticTools.Git2SemVer.Tool.SetupCommand;
 //using NoeticTools.Testing.Common;

@@ -1,5 +1,5 @@
-using NoeticTools.Common;
-using NoeticTools.Common.Tools;
+using NoeticTools.Git2SemVer.Core;
+using NoeticTools.Git2SemVer.Core.Tools;
 
 
 #pragma warning disable NUnit2045
@@ -33,29 +33,15 @@ internal abstract class SolutionTestsBase : ScriptingTestsBase
 
     protected static void DeleteAllNuGetPackages(string packageOutputDir)
     {
-        if (!string.IsNullOrWhiteSpace(packageOutputDir) && Directory.Exists(packageOutputDir))
+        if (string.IsNullOrWhiteSpace(packageOutputDir) || !Directory.Exists(packageOutputDir))
         {
-            foreach (var filePath in Directory.EnumerateFiles(packageOutputDir, "*.nupkg"))
-            {
-                File.Delete(filePath);
-            }
+            return;
         }
-    }
 
-    protected void BuildGit2SemVerTool()
-    {
-        var projectPath = Path.Combine(_solutionDirectory, "Git2SemVer.Tool/Git2SemVer.Tool.csproj");
-        var result = DotNetCli.Build(projectPath, BuildConfiguration, "-p:GeneratePackageOnBuild=false -p:PackageOutputPath=./nupkg.tests");
-        Assert.That(result.returnCode, Is.EqualTo(0));
-        Assert.That(Logger.HasError, Is.False);
-    }
-
-    protected void BuildGit2SemVerMSBuild()
-    {
-        var projectPath = Path.Combine(_solutionDirectory, "Git2SemVer.MSBuild/Git2SemVer.MSBuild.csproj");
-        var result = DotNetCli.Build(projectPath, BuildConfiguration, "-p:GeneratePackageOnBuild=false -p:PackageOutputPath=./nupkg.tests");
-        Assert.That(result.returnCode, Is.EqualTo(0));
-        Assert.That(Logger.HasError, Is.False);
+        foreach (var filePath in Directory.EnumerateFiles(packageOutputDir, "*.nupkg"))
+        {
+            File.Delete(filePath);
+        }
     }
 
     protected string DeployScript(string scriptFilename)
