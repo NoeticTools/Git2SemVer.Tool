@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="edeb24c3-9930-4526-ab25-cc5ee30ce035" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2021.1/project-config.xsd">
+  <name>NoeticTools.Git2SemVer.Tool</name>
+  <parameters />
+  <project-extensions>
+    <extension id="PROJECT_EXT_13" type="IssueTracker">
+      <parameters>
+        <param name="authType" value="storedToken" />
+        <param name="name" value="NoeticTools/Git2SemVer.Tool" />
+        <param name="pattern" value="#(\d+)" />
+        <param name="repository" value="https://github.com/NoeticTools/Git2SemVer.Tool" />
+        <param name="secure:accessToken" value="" />
+        <param name="secure:password" value="" />
+        <param name="tokenId" value="tc_token_id:CID_3de2c2727993edab40e4371046ac9db7:-1:957c9813-d2ab-45a3-a565-186fb336ae86" />
+        <param name="type" value="GithubIssues" />
+        <param name="username" value="" />
+      </parameters>
+    </extension>
+    <extension id="PROJECT_EXT_17" type="versionedSettings">
+      <parameters>
+        <param name="buildSettings" value="ALWAYS_USE_CURRENT" />
+        <param name="credentialsStorageType" value="credentialsJSON" />
+        <param name="enabled" value="true" />
+        <param name="ignoreChangesInDependenciesAndVcsSettings" value="false" />
+        <param name="rootId" value="NoeticToolsGit2SemVerTool_HttpsGithubComNoetictoolsGit2semverRefsHeadsMain" />
+        <param name="showChanges" value="false" />
+      </parameters>
+    </extension>
+  </project-extensions>
+  <cleanup>
+    <policy type="daysAndBuilds" cleanup-level="ARTIFACTS">
+      <parameters>
+        <param name="keepBuilds.count" value="20" />
+        <param name="keepDays.count" value="5" />
+      </parameters>
+    </policy>
+  </cleanup>
+</project>
+
