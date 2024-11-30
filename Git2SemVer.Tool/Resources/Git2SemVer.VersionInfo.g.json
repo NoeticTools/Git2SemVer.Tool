@@ -1,4 +1,5 @@
 {
+  "Rev": 2,
   "Git2SemVerVersionInfo": {
     "AssemblyVersion": "0.1.0",
     "BuildContext": "",
@@ -6,30 +7,42 @@
     "BuildSystemVersion": "0.1.0",
     "FileVersion": "0.1.0",
     "Git": {
+      "$type": "GitOutputs",
       "BranchName": "main",
       "CommitsSinceLastRelease": 99999,
       "HasLocalChanges": true,
       "HeadCommit": {
         "CommitId": {
-          "Id": "Sample0000000",
+          "Sha": "Sample0000000",
           "ShortSha": "Sample0"
         },
-        "Message": "WIP",
-        "Parents": [
-        ],
         "ReleasedVersion": null,
-        "Tags": ""
+        "Summary": "null commit",
+        "MessageBody": "",
+        "Refs": "",
+        "Parents": [],
+        "Metadata": {
+          "ApiChangeFlags": {
+            "BreakingChange": false,
+            "Fix": false,
+            "FunctionalityChange": false
+          },
+          "Body": "",
+          "ChangeDescription": "",
+          "ChangeType": 1,
+          "FooterKeyValues": []
+        },
+        "LastReleaseCommit": null,
+        "LastReleaseVersion": null
       },
-      "LastReleaseCommit": null,
-      "LastReleaseVersion": null
+      "InformationalVersion": "0.1.0-Sample",
+      "IsInInitialDevelopment": true,
+      "Output1": "",
+      "Output2": "",
+      "PackageVersion": "0.1.0",
+      "PrereleaseLabel": "Sample",
+      "Version": "0.1.0"
     },
-    "InformationalVersion": "0.1.0-Sample",
-    "IsInInitialDevelopment": true,
-    "Output1": "",
-    "Output2": "",
-    "PackageVersion": "0.1.0",
-    "PrereleaseLabel": "Sample",
-    "Version": "0.1.0"
-  },
-  "Version": "1.0.0"
+    "Version": "1.0.0"
+  }
 }
