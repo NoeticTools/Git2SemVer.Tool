@@ -14,14 +14,15 @@ internal class Git2SemVerCommandApp
 
         app.Configure(config =>
         {
-            config.SetApplicationName("Git2SemVer.Tool");
+            config.SetApplicationName("Git2SemVer");
             config.UseAssemblyInformationalVersion();
 
             config.AddCommand<AddCliCommand>("add")
                   .WithDescription("Add Git2SemVer solution versioning to solution in working directory.")
                   .WithData(servicesProvider);
+
             config.AddCommand<RemoveCliCommand>("remove")
-                  .WithDescription("Add Git2SemVer solution versioning to solution in working directory.")
+                  .WithDescription("Remove Git2SemVer solution versioning from solution in working directory.")
                   .WithData(servicesProvider);
         });
 
