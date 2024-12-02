@@ -28,10 +28,6 @@ internal sealed class RunCommand : IRunCommand
 
     public void Execute(RunCommandSettings settings)
     {
-        using var logger = new CompositeLogger();
-        logger.Add(new NoDisposeLoggerDecorator(_logger));
-        logger.Add(new ConsoleLogger());
-
         try
         {
             _console.WriteInfoLine($"Running Git2SemVer solution generator{(settings.Unattended ? " (unattended)" : "")}.");
@@ -48,6 +44,11 @@ internal sealed class RunCommand : IRunCommand
                 inputs.HostType = settings.HostType;
             }
 
+            #pragma warning disable CA2000
+            using var logger = new CompositeLogger();
+            logger.Add(new NoDisposeLoggerDecorator(_logger));
+            logger.Add(new ConsoleLogger());
+            #pragma warning restore CA2000
             logger.Level = GetVerbosity(settings.Verbosity);
 
             IOutputsJsonIO outputJsonIO = settings.EnableJsonFileWrite ? 
