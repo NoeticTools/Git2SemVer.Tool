@@ -29,6 +29,9 @@ internal sealed class RunCommand : IRunCommand
     public void Execute(RunCommandSettings settings)
     {
         using var logger = new CompositeLogger();
+        logger.Add(new NoDisposeLoggerDecorator(_logger));
+        logger.Add(new ConsoleLogger());
+
         try
         {
             _console.WriteInfoLine($"Running Git2SemVer solution generator{(settings.Unattended ? " (unattended)" : "")}.");
@@ -45,8 +48,6 @@ internal sealed class RunCommand : IRunCommand
                 inputs.HostType = settings.HostType;
             }
 
-            logger.Add(new NoDisposeLoggerDecorator(_logger));
-            logger.Add(new ConsoleLogger());
             logger.Level = GetVerbosity(settings.Verbosity);
 
             IOutputsJsonIO outputJsonIO = settings.EnableJsonFileWrite ? 
