@@ -114,6 +114,11 @@ public class ConsoleIO : IConsoleIO
 
     public void WriteErrorLine(Exception exception)
     {
+        // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
+        if (exception == null)
+        {
+            return;
+        }
         MarkupLine($"[error]Exception: {exception.Message}[/]\nStack Trace: {exception.StackTrace}");
         _logger.LogError(exception);
     }
