@@ -33,7 +33,7 @@ internal sealed class GeneratorInputs : IVersionGeneratorInputs
 
     public string SolutionSharedVersioningPropsFile { get; } = "";
 
-    public bool UpdateHostBuildLabel { get; };
+    public bool UpdateHostBuildLabel { get; set; }
 
     public string Version { get; } = "";
 
