@@ -8,9 +8,9 @@ using Spectre.Console.Cli;
 
 namespace NoeticTools.Git2SemVer.Tool.CommandLine;
 
-internal class AddCliCommand : Command<CommonCommandSettings>
+internal class AddCliCommand : Command<SolutionCommandSettings>
 {
-    public override int Execute(CommandContext context, CommonCommandSettings settings)
+    public override int Execute(CommandContext context, SolutionCommandSettings settings)
     {
         var serviceProvider = (IServiceProvider)context.Data!;
         var console = serviceProvider.GetService<IConsoleIO>()!;

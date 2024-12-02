@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using NoeticTools.Git2SemVer.Tool.Commands.Add;
 using NoeticTools.Git2SemVer.Tool.Commands.Remove;
+using NoeticTools.Git2SemVer.Tool.Commands.Run;
 
 
 // ReSharper disable ClassNeverInstantiated.Global
@@ -26,5 +27,10 @@ internal class CommandFactory : ICommandFactory
     public IRemoveCommand CreateRemoveCommand()
     {
         return _servicesProvider.GetService<IRemoveCommand>()!;
+    }
+
+    public IRunCommand CreateRunCommand()
+    {
+        return _servicesProvider.GetService<IRunCommand>()!;
     }
 }

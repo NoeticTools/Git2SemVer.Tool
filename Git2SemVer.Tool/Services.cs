@@ -18,6 +18,7 @@ internal sealed class Services
 
         services.AddNoeticToolsGit2SemVerTool();
         services.AddNoeticToolsGit2SemVerCore();
+        services.AddNoeticToolsGit2SemVerFramework();
 
         return services.BuildServiceProvider();
     }

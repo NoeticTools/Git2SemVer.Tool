@@ -112,6 +112,12 @@ public class ConsoleIO : IConsoleIO
         }
     }
 
+    public void WriteErrorLine(Exception exception)
+    {
+        MarkupLine($"[error]Exception: {exception.Message}[/]\nStack Trace: {exception.StackTrace}");
+        _logger.LogError(exception);
+    }
+
     public void WriteErrorLine(string message)
     {
         MarkupLine("[error]" + message + "[/]");

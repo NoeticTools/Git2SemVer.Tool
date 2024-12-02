@@ -1,5 +1,6 @@
 ﻿using NoeticTools.Git2SemVer.Core.Logging;
 using Spectre.Console.Cli;
+// ReSharper disable ClassNeverInstantiated.Global
 
 
 namespace NoeticTools.Git2SemVer.Tool.CommandLine;
@@ -10,6 +11,7 @@ internal class Git2SemVerCommandApp
     {
         using var logger = new FileLogger(GetLogFilePath());
         var servicesProvider = Services.ConfigureServices(logger);
+        
         var app = new CommandApp();
 
         app.Configure(config =>
@@ -23,6 +25,10 @@ internal class Git2SemVerCommandApp
 
             config.AddCommand<RemoveCliCommand>("remove")
                   .WithDescription("Remove Git2SemVer solution versioning from solution in working directory.")
+                  .WithData(servicesProvider);
+
+            config.AddCommand<RunCliCommand>("run")
+                  .WithDescription("Run version generator.")
                   .WithData(servicesProvider);
         });
 

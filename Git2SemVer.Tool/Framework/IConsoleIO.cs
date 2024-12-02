@@ -35,4 +35,6 @@ public interface IConsoleIO
     void WriteLine(string message);
 
     void WriteWarningLine(string message);
+
+    void WriteErrorLine(Exception exception);
 }

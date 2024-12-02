@@ -33,6 +33,21 @@ internal class ToolIntegrationTests : SolutionTestsBase
         ExecuteGit2SemVerTool("remove -u");
     }
 
+    /// <summary>
+    ///     This test requires manual inspection of output to see that logging levels are correct.
+    /// </summary>
+    [TestCase("info")]
+    [TestCase("debug")]
+    [TestCase("trace")]
+    public void RunCommandTest(string verbosity)
+    {
+        var result = ExecuteGit2SemVerTool($"run -u --verbosity {verbosity}");
+
+        Console.WriteLine(result.stdOutput);
+        Assert.That(Logger.HasError, Is.False);
+        Assert.That(result.returnCode, Is.EqualTo(0));
+    }
+
     [Test]
     public void AddCommandTest()
     {
