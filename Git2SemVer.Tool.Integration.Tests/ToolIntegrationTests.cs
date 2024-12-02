@@ -77,7 +77,23 @@ internal class ToolIntegrationTests : SolutionTestsBase
         Assert.That(Logger.HasError, Is.False);
         Assert.That(result.returnCode, Is.EqualTo(0));
         Assert.That(result.stdOutput, Does.Contain("-h, --help"));
-        Assert.That(result.stdOutput, Does.Contain("-u, --unattended")); // checking for "Git2SemVer.Tool add [OPTIONS]" not reliable on linux
+        Assert.That(result.stdOutput, Does.Contain("-u, --unattended"));
+    }
+
+    [Test]
+    public void ToolHelpRunCommand()
+    {
+        var result = ExecuteGit2SemVerTool("run --help");
+        TestContext.Out.WriteLine(result.stdOutput);
+
+        Assert.That(Logger.HasError, Is.False);
+        Assert.That(result.returnCode, Is.EqualTo(0));
+        Assert.That(result.stdOutput, Does.Contain("-h, --help"));
+        Assert.That(result.stdOutput, Does.Contain("-u, --unattended"));
+        Assert.That(result.stdOutput, Does.Contain("-v, --verbosity <LEVEL>"));
+        Assert.That(result.stdOutput, Does.Contain("--host-type <TYPE>"));
+        Assert.That(result.stdOutput, Does.Contain("--output <DIRECTORY>"));
+        Assert.That(result.stdOutput, Does.Contain("--enable-json-write"));
     }
 
     [Test]
@@ -89,7 +105,7 @@ internal class ToolIntegrationTests : SolutionTestsBase
         Assert.That(Logger.HasError, Is.False);
         Assert.That(result.returnCode, Is.EqualTo(0));
         Assert.That(result.stdOutput, Does.Contain("-h, --help"));
-        Assert.That(result.stdOutput, Does.Not.Contain("-u, --unattended")); // checking for "Git2SemVer.Tool add [OPTIONS]" not reliable on linux
+        Assert.That(result.stdOutput, Does.Not.Contain("-u, --unattended"));
     }
 
     [Test]

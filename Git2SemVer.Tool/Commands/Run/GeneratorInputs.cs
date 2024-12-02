@@ -11,7 +11,7 @@ internal sealed class GeneratorInputs : IVersionGeneratorInputs
         return true;
     }
 
-    public string BranchMaturityPattern { get; } = "";
+    public string BranchMaturityPattern { get; set; } = "";
 
     public string BuildContext { get; } = "";
 
@@ -19,15 +19,15 @@ internal sealed class GeneratorInputs : IVersionGeneratorInputs
 
     public string BuildNumber { get; } = "";
 
-    public string BuildScriptPath { get; } = "";
+    public string BuildScriptPath { get; set; } = "";
 
-    public string HostType { get; } = "";
+    public string HostType { get; set; } = "";
 
-    public string IntermediateOutputDirectory { get; } = "";
+    public string IntermediateOutputDirectory { get; set; } = "";
 
-    public bool? RunScript { get; } = null;
+    public bool? RunScript { get; set; } = null;
 
-    public string ScriptArgs { get; } = "";
+    public string ScriptArgs { get; set; } = "";
 
     public string SolutionSharedDirectory { get; } = "";
 

@@ -35,8 +35,14 @@ internal sealed class RunCommand : IRunCommand
 
             var inputs = new GeneratorInputs
             {
-                VersioningMode = VersioningMode.StandAloneProject
+                VersioningMode = VersioningMode.StandAloneProject,
+                IntermediateOutputDirectory = settings.OutputDirectory
             };
+
+            if (settings.HostType != null)
+            {
+                inputs.HostType = settings.HostType;
+            }
 
             using var logger = new CompositeLogger();
             logger.Add(new NoDisposeLoggerDecorator(_logger));
