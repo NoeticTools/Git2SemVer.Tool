@@ -25,7 +25,7 @@ internal sealed class GeneratorInputs : IVersionGeneratorInputs
 
     public string IntermediateOutputDirectory { get; set; } = "";
 
-    public bool? RunScript { get; set; } = null;
+    public bool? RunScript { get; set; }
 
     public string ScriptArgs { get; set; } = "";
 
@@ -33,7 +33,7 @@ internal sealed class GeneratorInputs : IVersionGeneratorInputs
 
     public string SolutionSharedVersioningPropsFile { get; } = "";
 
-    public bool UpdateHostBuildLabel { get; } = false;
+    public bool UpdateHostBuildLabel { get; };
 
     public string Version { get; } = "";
 

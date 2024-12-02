@@ -70,6 +70,7 @@ internal sealed class RunCommand : IRunCommand
         catch (Exception exception)
         {
             _console.WriteErrorLine(exception);
+            throw;
         }
     }
 
