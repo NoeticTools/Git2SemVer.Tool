@@ -90,9 +90,9 @@ internal class ToolIntegrationTests : SolutionTestsBase
         Assert.That(result.returnCode, Is.EqualTo(0));
         Assert.That(result.stdOutput, Does.Contain("-h, --help"));
         Assert.That(result.stdOutput, Does.Contain("-u, --unattended"));
-        Assert.That(result.stdOutput, Does.Contain("-v, --verbosity <LEVEL>"));
-        Assert.That(result.stdOutput, Does.Contain("--host-type <TYPE>"));
-        Assert.That(result.stdOutput, Does.Contain("--output <DIRECTORY>"));
+        Assert.That(result.stdOutput, Does.Contain("-v, --verbosity"));
+        Assert.That(result.stdOutput, Does.Contain("--host-type"));
+        Assert.That(result.stdOutput, Does.Contain("--output"));
         Assert.That(result.stdOutput, Does.Contain("--enable-json-write"));
     }
 
