@@ -54,20 +54,10 @@ internal sealed class RunCommand : IRunCommand
             IOutputsJsonIO outputJsonIO = settings.EnableJsonFileWrite ? 
                 new OutputsJsonFileIO() : new ReadOnlyOutputJsonIO();
             var versionGenerator = new ProjectVersioningFactory(logger).Create(inputs, outputJsonIO);
-            var outputs = versionGenerator.Run();
+            versionGenerator.Run();
 
-            _console.WriteLine($"""
-                               
-                               Outputs:
-                               
-                                  Assembly version:      {outputs.AssemblyVersion}
-                                  File version:          {outputs.FileVersion}
-                                  Package version:       {outputs.PackageVersion}
-                                  Build system label:    {outputs.BuildSystemVersion}
-                                  Informational version: {outputs.InformationalVersion}
-                                  
-                               Completed.
-                               """);
+            _console.WriteInfoLine("");
+            _console.WriteInfoLine("Completed");
         }
         catch (Exception exception)
         {
