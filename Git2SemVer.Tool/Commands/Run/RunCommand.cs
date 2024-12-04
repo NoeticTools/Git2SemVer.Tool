@@ -1,12 +1,10 @@
 ﻿using Injectio.Attributes;
-using NoeticTools.Git2SemVer.Core.Exceptions;
 using NoeticTools.Git2SemVer.Core.Logging;
 using NoeticTools.Git2SemVer.Framework;
 using NoeticTools.Git2SemVer.Framework.Generation;
-using NoeticTools.Git2SemVer.Tool.Framework;
-using System;
 using NoeticTools.Git2SemVer.Framework.Persistence;
 using NoeticTools.Git2SemVer.Tool.CommandLine;
+using NoeticTools.Git2SemVer.Tool.Framework;
 
 
 namespace NoeticTools.Git2SemVer.Tool.Commands.Run;
@@ -30,7 +28,7 @@ internal sealed class RunCommand : IRunCommand
     {
         try
         {
-            _console.WriteInfoLine($"Running Git2SemVer solution generator{(settings.Unattended ? " (unattended)" : "")}.");
+            _console.WriteInfoLine($"Running Git2SemVer version generator{(settings.Unattended ? " (unattended)" : "")}.");
             _console.WriteLine();
 
             var inputs = new GeneratorInputs
@@ -44,15 +42,14 @@ internal sealed class RunCommand : IRunCommand
                 inputs.HostType = settings.HostType;
             }
 
-            #pragma warning disable CA2000
+#pragma warning disable CA2000
             using var logger = new CompositeLogger();
             logger.Add(new NoDisposeLoggerDecorator(_logger));
             logger.Add(new ConsoleLogger());
-            #pragma warning restore CA2000
+#pragma warning restore CA2000
             logger.Level = GetVerbosity(settings.Verbosity);
 
-            IOutputsJsonIO outputJsonIO = settings.EnableJsonFileWrite ? 
-                new OutputsJsonFileIO() : new ReadOnlyOutputJsonIO();
+            IOutputsJsonIO outputJsonIO = settings.EnableJsonFileWrite ? new OutputsJsonFileIO() : new ReadOnlyOutputJsonIO();
             var versionGenerator = new ProjectVersioningFactory(logger).Create(inputs, outputJsonIO);
             versionGenerator.Run();
 
@@ -68,7 +65,7 @@ internal sealed class RunCommand : IRunCommand
 
     private LoggingLevel GetVerbosity(string verbosity)
     {
-        if (Enum.TryParse(value: verbosity, ignoreCase: true, out LoggingLevel level))
+        if (Enum.TryParse(verbosity, true, out LoggingLevel level))
         {
             return level;
         }

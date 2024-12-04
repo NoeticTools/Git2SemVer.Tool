@@ -31,7 +31,7 @@ public class RunCommandSettings : CommonCommandSettings
 
     [CommandOption("--enable-json-write")]
     [DefaultValue(false)]
-    [Description("Enables writing of generated version JSON file.")]
+    [Description("Enables writing generated versions to file 'Git2SemVer.VersionInfo.g.json'.")]
     public bool EnableJsonFileWrite { get; set; }
 
     [CommandOption("-v|--verbosity <LEVEL>")]
