@@ -31,9 +31,10 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2025.03"
+version = "2025.07"
 
 project {
+    archived = true
 
     buildType(BuildAndTest)
     buildType(DeployLocalTeamCityPackage)
@@ -58,6 +59,7 @@ project {
 
 object BuildAndTest : BuildType({
     name = "Build and test"
+    paused = true
 
     artifactRules = """
         +:Git2SemVer.MSBuild/nupkg/NoeticTools.*.nupkg
@@ -129,6 +131,7 @@ object BuildAndTest : BuildType({
 object DeployLocalTeamCityPackage : BuildType({
     name = "Deploy (local TeamCity) - package"
     description = "Deploy NuGet package"
+    paused = true
 
     enablePersonalBuilds = false
     type = BuildTypeSettings.Type.DEPLOYMENT
